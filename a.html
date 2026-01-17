@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering | Class of Muhammed</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader-content">
+            <h2 id="percent">0%</h2>
+            <div class="progress-bar"><div class="fill"></div></div>
+            <p>INITIALIZING SYSTEMS...</p>
+        </div>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <div class="content">
+        <nav>
+            <div class="logo">MUHAMMED</div>
+            <button class="menu-btn">My Skills</button>
+        </nav>
+
+        <section class="hero">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="https://academy.avast.com/hubfs/New_Avast_Academy/Hackers/Hacker-Thumb-a1.png " alt="Muhammed - Aspiring Hacker" />
+                </div>
+                <div class="profile-info">
+                    <h1>Hi, I'm <span class="gradient-text">Muhammed</span></h1>
+                    <p class="subtitle">19 Years Old | Software Engineering Student</p>
+                    <p class="university">Cihan University</p>
+                    <p class="description">Passionate about cybersecurity, coding, and building innovative solutions. Currently pursuing my degree in Software Engineering while honing my skills in web development and ethical hacking.</p>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="title">My Skills</h2>
+        <section class="skills">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%"></div>
+                </div>
+                <span class="skill-percent">50%</span>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%"></div>
+                </div>
+                <span class="skill-percent">50%</span>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 45%"></div>
+                </div>
+                <span class="skill-percent">45%</span>
+            </div>
+        </section>
+
+        <h2 class="title">Video Gallery</h2>
+        <div class="video-section">
+            <button id="full-stack-btn" class="full-stack-btn">Full Stack</button>
+            <div id="upload-section" class="upload-section hidden">
+                <div class="upload-form">
+                    <h3>Upload a Video</h3>
+                    <form id="video-upload-form" enctype="multipart/form-data">
+                        <input type="text" id="video-title" placeholder="Video Title" required>
+                        <textarea id="video-description" placeholder="Video Description"></textarea>
+                        <input type="file" id="video-file" accept="video/*" required>
+                        <button type="submit">Upload Video</button>
+                    </form>
+                </div>
+            </div>
+            <div id="video-gallery" class="video-gallery">
+                <!-- Videos will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
